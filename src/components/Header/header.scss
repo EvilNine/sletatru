@@ -1,0 +1,45 @@
+@import "../../scssStyles/mixins";
+@import "../../scssStyles/var";
+.header {
+    padding: 18px 0;
+}
+.header__col-right {
+    display: none; 
+    @include mdMinBreakPoint {
+        margin-left: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.header__btn {
+    &-phone {
+        display: inline-flex;
+        align-items: center;
+        
+        a {    
+            text-decoration: none; 
+            font-size: 14px;
+        }
+        svg {
+            width: 9px;
+            display: block;
+            flex: 0 0 9px;
+            margin-left: 12px;
+        }
+    }
+    &-auth {
+        background-color: transparent;
+        color: $warning;
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+        margin-left: 60px;
+        svg {
+            display: block;
+            width: 9px;
+            flex: 0 0 9px;
+            margin-right: 6px;
+        }
+    }
+}

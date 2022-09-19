@@ -1,0 +1,99 @@
+@import "../../scssStyles/mixins";
+@import "../../scssStyles/var";
+
+.booking {
+    background-color: $white;
+    box-shadow: 0px 2px 8px rgba(15, 85, 126, 0.04), 4px 4px 8px rgba(18, 102, 152, 0.08);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding: 40px 16px;
+    @include mdMinBreakPoint {
+        padding: 40px 30px;
+        margin-bottom: 80px;
+    }
+    &__title {
+        font-size: 32px;
+        color: $black;
+        margin-bottom: 40px;
+    }
+    &__fieldset {
+        margin-bottom: 2.5rem;
+    }
+    &__item {
+        &-title {
+            font-size: $font-size-base;
+            font-weight: $font-weight-semibold;
+            margin: 0;
+        }
+    }
+    &__total {
+        padding-top: 1rem;
+        &-title {
+            font-size: $font-size-base;
+            font-weight: $font-weight-bold;
+            margin: 0;
+        }
+        &-price {
+            color: $info;
+            font-size: 2rem;
+            font-weight: $font-weight-bold;
+            margin: 0;
+            small {
+                font-size: 70%;
+            }
+        }
+    }
+    &__info {
+        position: sticky;
+        top: 1rem;
+    }
+    &__category {
+        background-color: $primary-light;
+        border-radius: .25rem;
+        padding: .25rem .5rem;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        &-title {
+            font-size: .75rem;
+            margin-right: .5rem;
+        }
+        &-icon {
+            svg {
+                fill: $info;
+                display: block;
+            }
+        }
+        &-count {
+            font-size: .75rem;
+            color: $info;
+            margin-left: 2px;
+        }
+
+    }
+    &__day {
+        margin-left: 4px;
+        &-weekday {
+            color: $gray;
+        }
+        &-dayoff {
+            color: $danger;
+        }
+    }
+    &__total {
+        border-top: 1px solid $primary-light;
+        padding-top: .5rem;
+        margin-top: 1rem;
+        
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .5rem;
+        }
+        &-field {
+            font-size: .875rem;
+            color: $gray;
+        }
+    }
+}

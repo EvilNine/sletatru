@@ -1,0 +1,49 @@
+@import '../../scssStyles/mixins';
+@import "../../scssStyles/var";
+
+.callMeBack {
+    background: radial-gradient(85.62% 123.5% at 16.99% 100%, rgba(0, 195, 255, 0.2) 0%, rgba(243, 249, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(90.83% 141.65% at 88.14% 9.17%, rgba(91, 194, 0, 0.16) 0%, rgba(243, 249, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #F3F9FF;
+    border: 1px solid rgba($white, 0.5);
+    border-radius: 8px;
+    padding: 0 12px 32px;
+    @include mdMinBreakPoint {
+        padding: 36px 0 0 36px;
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: .25rem;
+        @include mdMinBreakPoint {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        position: relative;
+        
+        img {
+            display: block;
+            max-width: 70%;
+            margin-bottom: 4px;
+            margin-top: -28px;
+            margin-left: auto;
+            margin-right: auto;
+            @include mdMinBreakPoint {
+                margin-bottom: 0;
+                margin-top: 0;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+    &__form {
+        margin-top: 1.5rem;
+        @include mdMinBreakPoint {
+            box-shadow: 0px 2px 8px rgba(15, 85, 126, 0.04), 4px 4px 8px rgba(18, 102, 152, 0.08);
+            display: inline-flex;
+            width: 504px;
+        }
+    }
+}

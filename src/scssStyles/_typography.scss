@@ -1,0 +1,82 @@
+@import './mixins';
+@import './var';
+
+h1 {
+    font-size: $h1-font-size-sm;    
+    font-weight: $font-weight-semibold;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+    @include mdMinBreakPoint {
+        font-size: $h1-font-size-md;
+        margin-bottom: 2.5rem;
+    }
+    @include lgMinBreakPoint {
+        font-size: $h1-font-size-lg;
+    }
+}
+
+h2 {
+    font-size: $h2-font-size-sm;    
+    font-weight: $font-weight-semibold;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+    @include mdMinBreakPoint {
+        font-size: $h2-font-size-md;
+        margin-bottom: 2.5rem;
+    }
+    @include lgMinBreakPoint {
+        font-size: $h2-font-size-lg;
+    }
+}
+
+h3, .h3 {
+    font-size: $h3-font-size-sm;    
+    font-weight: $font-weight-semibold;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    @include mdMinBreakPoint {
+        font-size: $h3-font-size-md;
+    }
+    @include lgMinBreakPoint {
+        font-size: $h3-font-size-lg;
+    }
+}
+
+h4, .h4 {
+    font-size: $h4-font-size-sm;    
+    font-weight: $font-weight-semibold;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    @include mdMinBreakPoint {
+        font-size: $h4-font-size-md;
+        margin-bottom: .5rem;
+    }
+    @include lgMinBreakPoint {
+        font-size: $h4-font-size-lg;
+    }
+}
+
+p {
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    font-style: normal;
+    line-height: 1.25;
+}
+
+
+// Transformation
+
+.text-lowercase  { text-transform: lowercase !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+
+// Weight and italics
+
+.font-weight-light   { font-weight: $font-weight-light !important; }
+.font-weight-lighter { font-weight: $font-weight-lighter !important; }
+.font-weight-normal  { font-weight: $font-weight-normal !important; }
+.font-weight-medium  { font-weight: $font-weight-medium !important; }
+.font-weight-semibold{ font-weight: $font-weight-semibold !important; }
+.font-weight-bold    { font-weight: $font-weight-bold !important; }
+.font-weight-bolder  { font-weight: $font-weight-bolder !important; }
+.font-italic         { font-style: italic !important; }

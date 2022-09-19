@@ -1,0 +1,46 @@
+// Colors
+$primary:   	#0078BE;
+$primary-light: #F3F9FF;
+$warning:   	#F6A81C;
+$danger: 		#FB4242;
+$info:      	#3D95FB;
+$white:     	#ffffff;
+$black:     	#313140;
+$gray: 			#A1A1A1;
+
+$body-bg:   	$primary-light;
+
+// Fonts
+$font-family-sans-serif: 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+	"Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+
+
+// Font weight
+$font-weight-lighter: 	lighter !default;
+$font-weight-light: 	300 !default;
+$font-weight-normal: 	400 !default;
+$font-weight-medium: 	500 !default;
+$font-weight-semibold: 	600 !default;
+$font-weight-bold: 		700 !default;
+$font-weight-bolder: 	800 !default;
+
+$font-size-base:        1rem;
+$h1-font-size-lg:       $font-size-base * 2.5 !default;
+$h2-font-size-lg:       $font-size-base * 2 !default;
+$h3-font-size-lg:       $font-size-base * 1.25 !default;
+$h4-font-size-lg:       $font-size-base * 1 !default;
+$h1-font-size-md: 		$font-size-base * 2.5 !default;
+$h2-font-size-md: 		$font-size-base * 2 !default;
+$h3-font-size-md: 		$font-size-base * 1.25 !default;
+$h4-font-size-md: 		$font-size-base * 1 !default;
+$h1-font-size-sm:		$font-size-base * 1.25 !default;
+$h2-font-size-sm:		$font-size-base * 1.25 !default;
+$h3-font-size-sm:		$font-size-base * 1.25 !default;
+$h4-font-size-sm:		$font-size-base * 1 !default;
+
+// Screen sizes
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 1232px;

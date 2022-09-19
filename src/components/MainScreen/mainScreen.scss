@@ -1,0 +1,38 @@
+@import "../../scssStyles/mixins";
+@import "../../scssStyles/var";
+
+.mainScreen {
+    
+    position: relative;
+    padding: 146px 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    @include mdMinBreakPoint {
+        border-radius: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    &__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        inset: 0;
+        &::after {
+            background-color: $black;
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: .4;
+        }
+    }
+    &__title {
+        font-weight: $font-weight-bolder;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        position: relative;
+        z-index: 1;
+    }
+}

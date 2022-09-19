@@ -1,0 +1,16 @@
+@import "./reset";
+@import "./var";
+@import "./typography";
+
+body {
+    background-color: $body-bg;
+    margin: 0;
+    font-family: $font-family-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $black;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
